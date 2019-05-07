@@ -14,7 +14,11 @@ Torna possível que operações de:
 
 ocorram em **O(1)**. Lembrando que **worst case** do hashing é **O(n)**, mas o **average case** é **O(1)**
 
-## HasTable ADT
+## Hash Table
+
+É uma estrutura de dado que guarda as chaves e seus valores associados, ela usa uma função hash para mapear as chaves para seus respectivos valores. A conveção geral é que usamos uma hash table quando o número de chaves atualmente guardado é relativamente menor que o número de chaves possíveis.
+
+## HashTable ADT
 
 As operações comuns para **hash table** são:
 
@@ -23,9 +27,3 @@ As operações comuns para **hash table** são:
 - insert: insere uma nova chave no hash table
 - delete: apaga uma chave no hash table
 - deleteHashTable: apaga o hash table
-
-## Entendendo Hasing
-
-Em termos simples nós podemos tretar **array** como um **hash table**. Para entendermos o uso do **hash table**, vamos considerar o seguinde exemplo: Dado um algoritmo para imprimir o primeiro caractere repetido se houver elementos duplicados. Vamos pensar nas possiveis soluções. A simples e bruta forma de resolver é: dado uma **string**, para cada caractere checar se é repetido ou não. O **time complexity** para esta abordagem é **O(n²)**.
-
-Agora, vamos encontrar a melhor solução para esse problema. Uma vez que nosso objetivo é encontrar o primeiro caractere repetido.
